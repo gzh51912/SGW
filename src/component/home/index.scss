@@ -1,0 +1,29 @@
+.home {
+    width: 1.3333vw;
+}
+
+.header {
+    height: 16vw;
+    align-items: center;
+    display: flex;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ccc;
+    font-size: 4.5333vw;
+    .dizhi{
+        width: 20%;
+        height: 11.7333vw;
+        line-height: 11.7333vw;
+        background: #f6f6f6;
+    }
+    .am-search {
+    width: 80%;
+   background: none;
+  .am-search-input{
+    border: 1px solid #ccc;
+  }
+}
+.am-search-cancel{
+    display: none;
+}
+}
+

@@ -1,26 +1,40 @@
-import React from 'react';
+import React, { Component,PureComponent } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { routers } from "./router"
+import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import { Icon } from 'antd-mobile';
+export default class App extends Component {
+  constructor(props){
+    super(props)
+  }
+  render() {
+    return (
+      <div className="App">
+      <Router>  
+      <ul className="AppNav">
+                <li><NavLink to="/home" className="NavBack" activeClassName="active" activeStyle={{color: 'red'}}></NavLink></li>
+                <li><NavLink to="/home" activeClassName="active" activeStyle={{color: 'red'}}>首页</NavLink></li>
+                <li><NavLink to="/ticket" activeClassName="active" activeStyle={{color: 'red'}}>购票</NavLink></li>
+                <li><NavLink to="/shopping" activeClassName="active" activeStyle={{color: 'red'}}>商城</NavLink></li>
+                <li><NavLink to="/find" activeClassName="active" activeStyle={{color: 'red'}}>发现</NavLink></li>
+                <li><NavLink to="/center" activeClassName="active" activeStyle={{color: 'red'}}>个人</NavLink></li>
+        </ul>
+      <Switch>
+        {
+            routers.map((item)=>{
+            return <Route key={item.path} path={item.path} component={item.component} />
+            })
+        }
+        <Redirect from="/" to="/home" exact />
+        <Redirect to="/404" />
+        </Switch>
+      </Router>
+    
+      </div>
+    );
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
 }
 
-export default App;
