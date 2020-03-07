@@ -1,0 +1,23 @@
+{
+  "id": "1670863",
+  "name": "时光网",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5474845",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "10691045",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}

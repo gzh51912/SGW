@@ -1,0 +1,377 @@
+//  搜索框
+.shoping_header {
+    height: 14.1333vw;
+    background: #f6f6f6;
+    padding: 0 1.3333vw 0 4.5333vw;
+
+    .am-search {
+        width: 80%;
+        height: 14.1333vw;
+        background: none;
+        float: left;
+
+        .am-search-value {
+            display: inline-block;
+            height: 10.6667vw;
+        }
+
+        .sub-title {
+            color: #888;
+            font-size: 4vw;
+        }
+    }
+
+    .cart {
+        margin: 2.3333vw 1.3333vw 0;
+        position: relative;
+        display: inline-block;
+        height: 14.1333vw;
+        width: 10%;
+        background: url(../../assets/cart2.png) no-repeat;
+        background-size: 100%;
+    }
+
+}
+
+// 轮播图
+.am-wingblank {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+// 宫格
+.shoping_gezi {
+    border: none !important;
+    margin-bottom: 3vw;
+}
+
+// 四张图片
+.shoping_img {
+    height: 89.6vw;
+    margin-bottom: 2.6667vw;
+
+    .img_left {
+        height: 60vw;
+        float: left;
+
+        img {
+            width: 49.6vw;
+            height: 60vw;
+            border-right: 1px solid #999999;
+        }
+    }
+
+    .img_right {
+        height: 60vw;
+        float: right;
+
+        img {
+            width: 50vw;
+            height: 29.8vw;
+        }
+
+        :first-child {
+            border-bottom: 1px solid #999999;
+        }
+    }
+
+    .img_bot {
+        height: 29.6853vw;
+
+        img {
+            height: 100%;
+            border-top: 1px solid #999999;
+        }
+    }
+}
+
+// 正义联盟
+.league {
+    margin-bottom: 2.6667vw;
+
+    .league_img {
+        height: 39.7333vw;
+
+        .league_imgs {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .league_tex {
+        font-family: "helvetica neue", "微软雅黑";
+        color: #333;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: .3rem;
+    }
+
+    .league_title {
+        font-family: "helvetica neue", "微软雅黑";
+        color: #333;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .league_ul {
+        width: 100%;
+        height: 109vw;
+        display: block;
+        box-sizing: border-box;
+        overflow-x: hidden;
+
+        .league_li {
+            width: 32%;
+            height: 12.8rem;
+            float: left;
+            display: block;
+            text-align: center;
+            overflow: hidden;
+
+            .league_imgs {
+                display: inline-block;
+                width: 26.6667vw;
+                height: 26.6667vw;
+                margin-left: 1.9333vw;
+            }
+
+            .league_nr {
+                padding: .64rem 0;
+                font-size: 3.4667vw;
+                line-height: 1.2rem;
+                font-weight: normal;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .league_q {
+                font-size: 3.7333vw;
+                color: #f15353;
+
+                .league_pri {
+                    color: #f15353;
+                    font-size: 4.8vw;
+                }
+            }
+        }
+
+    }
+
+    .league_b {
+        text-align: center;
+        padding: 2.6667vw 0 3.3333vw;
+
+        .league_but {
+            background: #f26262;
+            font-size: 4.2667vw;
+            width: 30.4vw;
+            height: 8.7467vw;
+            line-height: 8.7467vw;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            border-radius: 6.6667vw;
+            border: 1px solid #f26262;
+            color: #fff;
+        }
+    }
+
+}
+
+// 玩具模型
+.toy {
+    margin-bottom: 2.6667vw;
+    padding-bottom: 2.6667vw;
+
+    .toy_header {
+        width: 100%;
+        padding-top: 2vw;
+        margin-bottom: 1.3333vw;
+        display: flex;
+        justify-content: space-between;
+
+        .toy_title {
+            font-size: 4.8vw;
+            height: 6vw;
+            position: relative;
+            color: #FFB90F;
+
+            i {
+                display: inline-block;
+                width: 1.8667vw;
+                height: 5.4vw;
+                margin-right: 1.6vw;
+                vertical-align: middle;
+                background: #FFB90F
+            }
+        }
+
+        .toy_tit {
+            // height: 6vw;
+            // line-height: 6vw;
+            vertical-align: middle;
+            color: #333;
+            font-size: 4.2667vw;
+
+            .am-icon {
+                vertical-align: middle;
+                color: #cccccc;
+                margin-right: 1.3333vw;
+            }
+        }
+    }
+
+    .toy_centre {
+        height: 45.3333vw;
+        margin: 0 1.3333vw;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 1.3333vw 0;
+        margin-bottom: 1.3333vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .toy_foot {
+        width: 100%;
+        height: 40vw;
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+
+        li {
+            width: 33.3%;
+            text-align: center;
+
+            img {
+                width: 26.6667vw;
+                height: 26.6667vw;
+                margin: auto;
+            }
+
+            .foot_title {
+                padding: 1.3333vw 0;
+                font-size: 3.2vw;
+                line-height: 5vw;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                margin: 0 2vw;
+            }
+
+            .foot_price {
+                text-align: center;
+                font-size: 3.7333vw;
+                color: #f15353;
+
+                strong {
+                    font-size: 4.8vw;
+                    color: #f15353;
+                }
+            }
+        }
+    }
+}
+
+// 你可能感兴趣的   inter
+.inter {
+    padding: 1.3333vw 0;
+    background-color: #f6f6f6;
+
+    .inter_h2 {
+        vertical-align: middle;
+        height: 6.6667vw;
+        background-size: 1.3333vw auto;
+        background-color: #f6f6f6;
+        color: #999999;
+        font-size: 3.7333vw;
+        text-align: center;
+    }
+}
+
+// 板块
+.shop_fot {
+    .fot_ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        .fot_li {
+            height: 70vw;
+            width: 48%;
+            flex: 0 0 49%;
+            position: relative;
+            background: #fff;
+            margin-bottom: 1.3333vw;
+            &:nth-child(odd){
+              margin-right: 1.3333vw;  
+            }
+            .fot_new {
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 1.3333vw;
+                margin-top: -0.8vw;
+                background: #b569cf;
+                padding: 0.0533vw 0.08vw;
+                display: inline-block;
+                color: #fff;
+                background-color: #25ACBD;
+                position: absolute;
+                top: 0;
+            }
+
+            .fot_img {
+                height: auto;
+                margin-bottom: 2.6667vw;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .fot_dl {
+                padding: 0 2.6667vw;
+                font-family: "helvetica neue","微软雅黑";
+                .fot_dt {
+                    font-size: 3.4667vw;
+                    line-height: 5.3333vw;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    em{
+                        font-size: 2.6667vw;
+                        color: #ff8600;
+                        border: 0.1333vw solid #ff8600;
+                        border-radius: .2rem;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding: .1rem;
+                        line-height: 1rem;
+                        margin-right: 1.0667vw;
+                        margin-top: -0.5333vw;
+                    }
+                }
+                .fot_dd{
+                    padding: 0rem 0 1.3333vw;
+                    color: #ff8600;
+                    font-size: 4vw;
+                    b{
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #ff8600;
+                    font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

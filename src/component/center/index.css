@@ -1,0 +1,144 @@
+.head_img {
+  color: #333;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+  height: 45.3333vw;
+  z-index: 2;
+  margin-top: -4.4em;
+  background: url(http://static1.mtime.cn/html5/20200116143308/images/2014/set_endlogin.jpg) no-repeat;
+  background-size: cover;
+  padding: 0 1.5em 0 2.5em;
+}
+
+.head_img .head_tou {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding-top: 11.2vw;
+}
+
+.head_img .head_tou i {
+  display: inline-block;
+  width: 17.3333vw;
+  height: 17.3333vw;
+  line-height: 1;
+  vertical-align: middle;
+  border-radius: 10em;
+  overflow: hidden;
+}
+
+.head_img .head_tou i img {
+  width: 100%;
+  height: 100%;
+}
+
+.head_img .head_tou dl {
+  color: #fff;
+  margin-left: 4vw;
+}
+
+.head_img .head_tou dl dt {
+  margin: .6em 0 1em;
+  font-size: 5.0667vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.head_img .head_tou dl dd {
+  font-size: 3.7333vw;
+}
+
+.head_one {
+  margin-bottom: 6.6667vw;
+}
+
+.head_one .one_ul {
+  color: #333;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding: 0rem 1.5rem 0rem;
+  background: white;
+  position: relative;
+  margin-bottom: -0.5rem;
+  height: 40vw;
+}
+
+.head_one .one_ul .one_li {
+  width: 33.2%;
+  float: left;
+  margin-top: 8.3333vw;
+}
+
+.head_one .one_ul .one_li .one_i {
+  display: block;
+  overflow: hidden;
+  width: 14.1333vw;
+  height: 14.1333vw;
+  border-radius: 5rem;
+  background: #ffb059 url(http://static1.mtime.cn/html5/20200116143308/images/2014/i_cate.png) no-repeat center center;
+  background-size: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head_one .one_ul .one_li .two_i {
+  display: block;
+  overflow: hidden;
+  width: 14.1333vw;
+  height: 14.1333vw;
+  border-radius: 5rem;
+  background: #78BDFD url(http://static1.mtime.cn/html5/20200116143308/images/2014/i_movie.png) no-repeat center center;
+  background-size: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head_one .one_ul .one_li .three_i {
+  display: block;
+  overflow: hidden;
+  width: 14.1333vw;
+  height: 14.1333vw;
+  border-radius: 5rem;
+  background: #ff815a url(http://static1.mtime.cn/html5/20200116143308/images/2014/i_shop.png) no-repeat center center;
+  background-size: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head_one .one_ul .one_li .one_p {
+  text-align: center;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-size: 3.7333vw;
+  color: #777;
+  padding: 2.6667vw 0;
+}
+
+.main .main_ul {
+  height: 69.6vw;
+  background: #fff;
+  padding: 0 0 0 1.3333vw;
+  box-shadow: 1px 1px 0.3em rgba(51, 51, 51, 0.1);
+  margin-bottom: 1.6vw;
+}
+
+.main .main_ul .main_li {
+  height: 13.7173vw;
+  padding: 1.0667vw 1.3333vw 1.0667vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .main_ul .main_li .li_left i {
+  width: 5.6vw;
+  height: 8vw;
+}
+
+.main .main_ul .main_li .li_left i img {
+  width: 100%;
+  height: 100%;
+}

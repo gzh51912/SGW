@@ -2,6 +2,7 @@
     width: 1.3333vw;
 }
 
+// 搜索框
 .header {
     height: 16vw;
     align-items: center;
@@ -9,21 +10,195 @@
     background: #f6f6f6;
     border-bottom: 1px solid #ccc;
     font-size: 4.5333vw;
-    .dizhi{
+
+    .dizhi {
         width: 20%;
         height: 11.7333vw;
         line-height: 11.7333vw;
         background: #f6f6f6;
+        text-align: center;
+        font-size: 5.3333vw;
     }
+
     .am-search {
-    width: 80%;
-   background: none;
-  .am-search-input{
-    border: 1px solid #ccc;
-  }
-}
-.am-search-cancel{
-    display: none;
-}
+        width: 80%;
+        background: none;
+
+        .am-search-input {
+            border: 1px solid #ccc;
+        }
+    }
+
+    .am-search-cancel {
+        display: none;
+    }
 }
 
+//热映
+.showing {
+    height: 68.4vw;
+    padding: 1.3333vw 4.6667vw;
+    background: #fff;
+
+    ul {
+        padding-top: 2.3333vw;
+        height: 45.6vw;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+
+        h2 {
+            width: 90.9067vw;
+            height: 11.2vw;
+            line-height: 11.2vw;
+            color: #333333;
+            float: left;
+
+            .showing_icon {
+                float: right;
+                margin-top: 2.6667vw;
+            }
+        }
+
+        li {
+            padding-top: 1.3333vw;
+            width: 22.6667vw;
+            height: 45.84vw;
+            font-size: 4.2667vw;
+            text-align: center;
+            float: left;
+
+            img {
+                width: 20.2667vw;
+                height: 30.2vw;
+                margin: auto;
+            }
+
+            p {
+                margin-top: 1.6667vw;
+            }
+        }
+    }
+
+    .indexclick {
+        height: 14.6667vw;
+        line-height: 14.6667vw;
+
+        h2 {
+            width: 90.9067vw;
+            height: 11.2vw;
+            line-height: 11.2vw;
+            color: #333333;
+
+            float: left;
+
+            .showing_icon {
+                float: right;
+                margin-top: 2.6667vw;
+            }
+        }
+    }
+}
+
+// 瀑布流
+.falls {
+
+    .falls_img {
+        height: 50vw;
+        margin: 2.6667vw 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .falls_s {
+        padding: 1.3333vw 4.6667vw 0;
+
+        .falls_h2 {
+            font-size: 5.6vw;
+            height: 11.2vw;
+            line-height: 11.2vw;
+        }
+
+        .falls_ul {
+
+            .big_li {       //大图样式
+                margin-bottom: 5.3333vw;
+                border-bottom: 1px solid #ccc;
+                .big_img {
+                    width: 100%;
+                    margin-bottom: 5.3333vw;
+                }
+                .falls_text {
+                    font-size: 4.8vw;
+                    font-weight: 600;
+                    color: #333333;
+                    margin-bottom: 4.3333vw;
+                }
+                .big_time{
+                    padding: 1.3333vw 0;
+                    margin-bottom: 2.6667vw;
+                    color: #999999;
+                }
+            }
+
+            .three_li {     //三个图片的样式
+                margin-bottom: 5.3333vw;
+                border-bottom: 1px solid #ccc;
+                 height: 41.3333vw;
+                .falls_text{
+                    font-size: 4.8vw;
+                    font-weight: 600;
+                    color: #333333;
+                    margin-bottom: 4.3333vw;
+                }
+                .three_img {
+                    height: 20vw;
+                    width: 33%;
+                    padding: 0 .15vw;
+                    margin-bottom: 3.6667vw;
+                     float: left;
+                }
+                .three_time{
+                    margin-bottom: 2.6667vw;
+                    color: #999999;
+                }
+            }
+
+            .small_li{  // 小图片的样式
+                margin-bottom: 5.3333vw;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                .small_img{
+                    width: 34.9333vw;
+                    height: 24.5333vw;
+                }
+                .small_right{
+                    padding-left: 3.3333vw;
+                    .small_text{
+                        font-size: 4.8vw;
+                        font-weight: 600;
+                        color: #333333;
+                        margin-bottom: 4.3333vw;
+                    }
+                    .small_time{
+                        color: #999999;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// 查看更多
+
+.more{
+    color:blue;
+    .more_text{
+        margin: 2.6667vw 0;
+        font-size: 4.8vw;
+        text-align: center;
+    }
+}
