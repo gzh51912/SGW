@@ -3,7 +3,6 @@ import "../../assets/font/iconfont.css"
 import "./index.css"
 import { SearchBar, Carousel, WingBlank, Grid, Button, Icon } from 'antd-mobile';
 
-
 export default class Shopping extends Component {
     constructor(props) {
         super(props)
@@ -57,7 +56,7 @@ export default class Shopping extends Component {
             })
         });
         fetch("api//ECommerce/RecommendProducts.api?t=20203618542228974&goodsIds=108795%2C108155&pageIndex=1").then((res) => res.json()).then((res) => {
-            console.log(res.goodsList)
+            // console.log(res.goodsList)
             this.setState({
                 goodsList: res.goodsList
             })

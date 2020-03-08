@@ -17,9 +17,9 @@ export default class Home extends Component {
                 listData: res.ms
             })
         });
-        fetch("/hd/article/originalInfoList.api").then((res) => res.json()).then((res) => {
+        fetch("/shop/article/originalInfoList.api").then((res) => res.json()).then((res) => {
             //  console.log(res.data.list[0].images[0].isVideo)   //代理瀑布流接口     大图的判断，如果isVideo 为true,则用大图的样式
-             console.log(res.data.list[5].images.length)   //  三个图的判断，如果images 里的length > 1  ,  则使用三个图的样式
+            //  console.log(res.data.list[5].images.length)   //  三个图的判断，如果images 里的length > 1  ,  则使用三个图的样式
             // console.log(res.data.list[4].images[0].isVideo)   // 小图的判断   isVideo:false 则使用 小图的样式
             // console.log(res.data.list)
             this.setState({

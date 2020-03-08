@@ -10,6 +10,8 @@
   background: url(http://static1.mtime.cn/html5/20200116143308/images/2014/set_endlogin.jpg) no-repeat;
   background-size: cover;
   padding: 0 1.5em 0 2.5em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .head_img .head_tou {
@@ -48,6 +50,19 @@
 
 .head_img .head_tou dl dd {
   font-size: 3.7333vw;
+}
+
+.head_img .head_ff {
+  width: 40%;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding-top: 11.2vw;
+  font-size: 4.2667vw;
+}
+
+.head_img .head_ff button {
+  background: #1a2158;
+  color: #fff;
 }
 
 .head_one {
@@ -127,18 +142,82 @@
 }
 
 .main .main_ul .main_li {
-  height: 13.7173vw;
   padding: 1.0667vw 1.3333vw 1.0667vw 0;
   display: flex;
   justify-content: space-between;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+  height: 11.5vw;
+  line-height: 11.5vw;
+  line-height: 1;
+}
+
+.main .main_ul .main_li .li_left {
+  display: flex;
+  padding-top: 3.3333vw;
 }
 
 .main .main_ul .main_li .li_left i {
-  width: 5.6vw;
-  height: 8vw;
+  display: inline-block;
+  height: 5.6vw;
+  width: 8vw;
+  float: left;
 }
 
-.main .main_ul .main_li .li_left i img {
+.main .main_ul .main_li .li_left i .i_img {
   width: 100%;
   height: 100%;
+}
+
+.main .main_ul .main_li .li_left .li_p {
+  flex: 1;
+  font-size: 4.8vw;
+  line-height: 1.6;
+  margin-left: 2.6667vw;
+}
+
+.am-icon {
+  padding-top: 3.3333vw;
+}
+
+.feedback .main_ul {
+  background: #fff;
+  padding: 0 0 0 1.3333vw;
+  box-shadow: 1px 1px 0.3em rgba(51, 51, 51, 0.1);
+  margin-bottom: 1.6vw;
+}
+
+.feedback .main_ul .main_li {
+  padding: 1.0667vw 1.3333vw 1.0667vw 0;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+  height: 11.5vw;
+  line-height: 11.5vw;
+  line-height: 1;
+}
+
+.feedback .main_ul .main_li .li_p {
+  box-sizing: border-box;
+  flex: 1;
+  font-size: 4.8vw;
+  line-height: 1.6;
+  padding-top: 2.6667vw;
+}
+
+.fot_but {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding: 0 2vw 0;
+  margin-top: 6vw;
+  margin-bottom: 4vw;
+}
+
+.fot_but .fot_button {
+  background: #f13900;
+  border-radius: 6.6667vw;
+  color: #fff;
+  font-size: 5.6vw;
 }
