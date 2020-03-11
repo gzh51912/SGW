@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./index.css"
+import axios from 'axios'
 export default class Find extends Component {
     constructor(props){
         super(props)
@@ -8,12 +9,17 @@ export default class Find extends Component {
         }
     }
     componentDidMount(){
-        fetch("/api/News/NewsList.api?t=20203821112239230&pageIndex=1").then((res)=>res.json()).then((res)=>{
-            // console.log(res.newsList)
+        axios.get("http://localhost:1920/users/newlist").then((res)=>{
             this.setState({
-                list:res.newsList
-            })
+                        list:res.data.newsList
+                    })
         })
+        // fetch("/api/News/NewsList.api?t=20203821112239230&pageIndex=1").then((res)=>res.json()).then((res)=>{
+        //     // console.log(res.newsList)
+        //     this.setState({
+        //         list:res.newsList
+        //     })
+        // })
     }
     render() {
         let {list} = this.state

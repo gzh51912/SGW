@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "../../assets/font/iconfont.css"
 import "./index.css"
 import { SearchBar, Carousel, WingBlank, Grid, Button, Icon } from 'antd-mobile';
-
+import axios from 'axios'
 export default class Shopping extends Component {
     constructor(props) {
         super(props)
@@ -47,20 +47,34 @@ export default class Shopping extends Component {
     }
 
     componentDidMount() {
-        fetch("api/PageSubArea/MarketFirstPageNew.api?t=20203517105796412").then((res) => res.json()).then((res) => {
-            //  console.log(res.topic[0].subList)
-            // console.log(res.category);
+
+        axios.get("http://localhost:1920/users/listData").then((res) => {
+            console.log(res)
             this.setState({
-                listData: res.topic[0].subList,
-                toyList: res.category,
-            })
-        });
-        fetch("api//ECommerce/RecommendProducts.api?t=20203618542228974&goodsIds=108795%2C108155&pageIndex=1").then((res) => res.json()).then((res) => {
-            // console.log(res.goodsList)
-            this.setState({
-                goodsList: res.goodsList
+                listData: res.data.topic[0].subList,
+                toyList: res.data.category,
             })
         })
+
+        axios.get("http://localhost:1920/users/goodssData").then((res) => {
+            this.setState({
+                goodsList: res.data.goodsList
+            })
+        })
+        // fetch("api/PageSubArea/MarketFirstPageNew.api?t=20203517105796412").then((res) => res.json()).then((res) => {
+        //     //  console.log(res.topic[0].subList)
+        //     // console.log(res.category);
+        //     this.setState({
+        //         listData: res.topic[0].subList,
+        //         toyList: res.category,
+        //     })
+        // });
+        // fetch("api//ECommerce/RecommendProducts.api?t=20203618542228974&goodsIds=108795%2C108155&pageIndex=1").then((res) => res.json()).then((res) => {
+        //     // console.log(res.goodsList)
+        //     this.setState({
+        //         goodsList: res.goodsList
+        //     })
+        // })
     }
     render() {
         let { list, listData, toyList, goodsList } = this.state;

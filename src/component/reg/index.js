@@ -1,38 +1,44 @@
 import React, { Component } from 'react'
 import "./index.css"
-import {checkname,reg} from "../../api/request"
-import { withRouter } from 'react-router'
-// @withRouter()
+// import {checkname,reg} from "../../api/request"
+// import { withRouter } from 'react-router'
+import axios from "axios"
 export default class Reg extends Component {
 
-    checkname=()=>{
-        if(this.refs.valueA.value.trim() === ""){
+    checkname = () => {
+        if (this.refs.valueA.value.trim() === "") {
             alert("请输入用户名")
         }
-        else{
-            checkname(this.refs.valueA.value.trim()).then((res)=>{
-            if(res.data.type===1){
-               reg(this.refs.valueA.value.trim(),this.refs.valueB.value.trim()).then((res)=>{
-                   if(res.data.type===1){
-                    alert("注册成功，点击确认跳转登陆页")
-                    this.props.history.push("/login")
-                   }
-               })
-            }else{
-                alert("该用户名已经被注册，换个其它的试试吧")
-            }
-        })
+        else {
+            let name = this.refs.valueA.value.trim()
+            let password = this.refs.valueB.value.trim()
+            console.log(name, password)
+            axios.get("http://localhost:1920/users/checkname?name=" + name).then((res) => {
+                // checkname(this.refs.valueA.value.trim()).then((res)=>{
+                console.log(res)
+                if (res.data.type === 1) {
+                    axios.post("http://localhost:1920/users/reg", { name, password }).then((res) => {
+                        //    reg(this.refs.valueA.value.trim(),this.refs.valueB.value.trim()).then((res)=>{
+                        if (res.data.type === 1) {
+                            alert("注册成功，点击确认跳转登陆页")
+                            this.props.history.push("/login")
+                        }
+                    })
+                } else {
+                    alert("该用户名已经被注册，换个其它的试试吧")
+                }
+            })
         }
     }
-   sub=()=>{
-    if(this.refs.valueA.value === "" && this.refs.valueB.value === ""){
-        alert("请输入用户名和密码")
-    }else{
-        this.checkname()
+    sub = () => {
+        if (this.refs.valueA.value === "" && this.refs.valueB.value === "") {
+            alert("请输入用户名和密码")
+        } else {
+            this.checkname()
+        }
+
     }
-    
-   }
-    
+
     render() {
         return (
             <div>
@@ -40,21 +46,21 @@ export default class Reg extends Component {
                     欢迎注册
               </section>
 
-                    <div className="reg_name">
-                        <span>用户名：</span>
-                        <input type="text" onChange={this.onChangeA} onBlur={this.checkname}  ref="valueA" placeholder="请输入用户名" />
-                    </div>
+                <div className="reg_name">
+                    <span>用户名：</span>
+                    <input type="text" onChange={this.onChangeA} onBlur={this.checkname} ref="valueA" placeholder="请输入用户名" />
+                </div>
 
-                    <div className="reg_psw">
-                        <span>密&nbsp;&nbsp;&nbsp;码：</span>
-                        <input type="password" ref="valueB" placeholder="请输入用户名" />
-                    </div>
+                <div className="reg_psw">
+                    <span>密&nbsp;&nbsp;&nbsp;码：</span>
+                    <input type="password" ref="valueB" placeholder="请输入用户名" />
+                </div>
 
 
 
                 <div className="reg_sub">
-                <button className="reg_sub_A" onClick={this.sub}>
-                    注册
+                    <button className="reg_sub_A" onClick={this.sub}>
+                        注册
                 </button>
                 </div>
 
